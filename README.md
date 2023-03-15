@@ -24,3 +24,4 @@ This project follows the standard CodeIgniter directory structure:<br>
 
 <h3><b>Credits</b></h3>
 I'd like to thank Diego Nascimento for pushing me to do this.<br>
+https://github.com/DiegoNascimento1<br>
