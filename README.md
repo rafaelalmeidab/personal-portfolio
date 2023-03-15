@@ -15,7 +15,7 @@ This project uses the following technologies:<br>
 This project includes the following features:<br>
 - Responsive design using Bootstrap<br>
 
-<h3><b>Directory Structure</b></h3><br>
+<h3><b>Directory Structure</b></h3>
 This project follows the standard CodeIgniter directory structure:<br>
 - app/ contains the CodeIgniter application files, including controllers, models, views, and helpers.<br>
 - public/ contains the front-end assets, including CSS, JavaScript, and images.<br>
