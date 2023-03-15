@@ -2,6 +2,8 @@
 
 This project is a simple web application built using CodeIgniter and Bootstrap. It follows the MVC (Model-View-Controller) architectural pattern and provides a user-friendly interface for managing data.<br>
 
+![alt text](https://github.com/rafaelalmeidab/personalPortfolio/assets/img/screenshot_pp.png?raw=true)
+
 <h3><b>Technologies Used</b></h3>
 This project uses the following technologies:<br>
 - PHP<br>
