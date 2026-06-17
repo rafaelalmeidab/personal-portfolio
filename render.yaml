@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: personal-portfolio
+    env: docker
+    plan: free
+    healthCheckPath: /
