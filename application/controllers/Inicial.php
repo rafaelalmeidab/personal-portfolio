@@ -6,27 +6,26 @@ class Inicial extends CI_Controller
     private $_include = "include/inicial/";
     private $_base    = "inicial/";
 
-    /**
-     * Index Page for this controller.
-     *
-     * Maps to the following URL
-     * 		http://example.com/index.php/welcome
-     *	- or -
-     * 		http://example.com/index.php/welcome/index
-     *	- or -
-     * Since this controller is set as the default controller in
-     * config/routes.php, it's displayed at http://example.com/
-     *
-     * So any other public methods not prefixed with an underscore will
-     * map to /index.php/welcome/<method_name>
-     * @see https://codeigniter.com/user_guide/general/urls.html
-     */
-
     public function index()
     {
-        $this->load->view($this->_include . 'cabecalho');
-        $this->load->view($this->_include . 'menu');
-        $this->load->view($this->_base . 'index');
-        $this->load->view($this->_include . 'rodape');
+        $lang_param = $this->input->get('lang');
+        if ($lang_param && in_array($lang_param, ['en', 'pt'])) {
+            $this->session->set_userdata('lang', $lang_param);
+        }
+
+        $current_lang = $this->session->userdata('lang') ?: 'en';
+
+        $this->config->load('translations');
+        $translations = $this->config->item('translations');
+
+        $data = [
+            'lang'         => $translations[$current_lang],
+            'current_lang' => $current_lang,
+        ];
+
+        $this->load->view($this->_include . 'cabecalho', $data);
+        $this->load->view($this->_include . 'menu', $data);
+        $this->load->view($this->_base . 'index', $data);
+        $this->load->view($this->_include . 'rodape', $data);
     }
 }

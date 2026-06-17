@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 690" width="690" height="690">
+  <rect x="0" y="0" width="690" height="690" fill="#001f10"/>
+  <g transform="translate(340, 350)">
+    <g transform="skewX(-20)">
+      <text
+        x="0"
+        y="0"
+        font-family="'Rajdhani', sans-serif"
+        font-size="480"
+        font-weight="700"
+        fill="#ffffff"
+        text-anchor="middle"
+        dominant-baseline="middle"
+      >b</text>
+    </g>
+  </g>
+</svg>
